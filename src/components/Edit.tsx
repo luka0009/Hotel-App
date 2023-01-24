@@ -16,7 +16,7 @@ export default function Edit({ editDesctiption, setEeditDesctiption, hotel }: pr
   function handleUpdate() {
     updateHotel(hotel.id, { Description: newDescription });
     setEeditDesctiption(!editDesctiption);
-    window.location.reload()
+    navigate('/')
   }
 
   return (
